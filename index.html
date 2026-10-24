@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Using Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Multiplication Using Functions</h2>
+
+    <p>Click the button to perform multiplication.</p>
+
+    <button onclick="myFunction(5)">Multiply One Value</button>
+    <button onclick="myFunction(5, 8)">Multiply Two Values</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(a, b) {
+            if (b === undefined) {
+                b = 2;
+            }
+
+            var result = a * b;
+
+            document.getElementById("demo").innerHTML =
+                "Multiplication Result: " + result;
+        }
+    </script>
+<footer>
+    <p>© 2026 Multiplication Using Functions</p>
+</footer>
+</body>
+</html>
